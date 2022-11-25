@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/purple_200"
+    tools:context=".app.HaqqindaFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          android:text="
+Proqramda hesab yaratmadan tam şəkildə anonim giriş edərək elanlara baxa və kriterlerinizə uyğun elanları axtararaq tapmağa çalışa bilərsiniz. Anonim giriş etmiş istifadəçilər digərlərindən fərqlənir. Anonim giriş etdikdə,
+Sizin elan paylaşma və öz profilinizə giriş etmə hüququnuz olmur. Hesab yaradaraq və ya hesabınız varsa giriş edərək proqramın bütün funksiyalarından istifadə edə bilərsiniz. Sizin gizliliyiniz tam əminliklə qorunur.
+Elanlar paylaşıldıqdan sonra silmək kimi bir hüququnuz yoxdur. Təhlükəsizliyimizi nəzərə alaraq atdığımız bu addımda, elanıvızı silmək istədikdə bizə müraciət edin. Əlaqə üçün haqqında bölməsinə baxa bilərsiniz."
+            android:textColor="@color/black"
+            android:textSize="27dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="264dp"
+            android:layout_height="222dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/logowithoutbg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
