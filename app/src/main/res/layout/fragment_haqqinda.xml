@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/teal_200"
+    tools:context=".app.HaqqindaFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/textView9"
+           android:layout_margin="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="
+Bu proqram 2022- ci il 29 oktyabr tarixində planlaşdırılmış və həmin ilin 6 noyabr tarixində hazırlanmışdır. Proqram tamamilə test məqsədli, praktika etmək üçün düzəldilmişdir.
+Proqramın yaradılma ideyası fərqli bir elan paylaş-bax konsepsiya yaratmaqda idi. Ümüd varam ki, bunu bacarmışam. Biliklərimi istifadə edərək düzəltdiyim bu proqramı bəyənəcəyinizi düşünürəm.
+Bütün proqram sadəcə 1 nəfər tərəfindən yaradılmışdır.
+Proqramın dizaynı, kodları, verilənlər bazası və s. Bashirli tərəfindən yaradılmışdır. Müəlliflik hüquqları qorunur və heç bir şəkildə bunun pozulmasına yer verilmir.
+Əlaqə üçün bashirlisb@gmail.com ilə əlaqə saxlayın!"
+
+           android:textColor="@color/black"
+           android:textSize="27dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <ImageView
+           android:id="@+id/imageView3"
+           android:layout_width="264dp"
+           android:layout_height="222dp"
+           android:layout_marginTop="8dp"
+           android:src="@drawable/logowithoutbg"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

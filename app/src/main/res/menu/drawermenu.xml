@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Hesabım" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="Profilim" android:enabled="true" android:id="@+id/myprofile" android:icon="?android:attr/actionModeFindDrawable"></item>
+                <item android:title="Mənim elanlarım" android:enabled="true" android:id="@+id/myposts" android:icon="@android:drawable/ic_lock_idle_lock"></item>
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Haqqında" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:icon="@android:drawable/ic_dialog_info" android:title="Proqram haqqında" android:id="@+id/haqqinda">
+
+                </item>
+                <item android:icon="@android:drawable/ic_menu_help" android:title="Nələr edə bilərəm?" android:id="@+id/whatCanIDo"></item>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Hərəkətlər">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item android:icon="@android:drawable/ic_input_delete" android:title="Hesabdan çıx" android:id="@+id/logout">
+
+                </item>
+                <item android:icon="@android:drawable/btn_dialog" android:title="Proqramı bağla" android:id="@+id/exit"></item>
+            </group>
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appgraph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.bashirli.alsat.app.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_addPostFragment"
+            app:destination="@id/addPostFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_myPostsFragment"
+            app:destination="@id/myPostsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_haqqindaFragment"
+            app:destination="@id/haqqindaFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_whatCanIdoFragment"
+            app:destination="@id/whatCanIdoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPostFragment"
+        android:name="com.bashirli.alsat.app.AddPostFragment"
+        android:label="fragment_add_post"
+        tools:layout="@layout/fragment_add_post" >
+        <action
+            android:id="@+id/action_addPostFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <argument
+            android:name="info"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="mainData"
+            app:argType="com.bashirli.alsat.model.Data"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_addPostFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <argument
+            android:name="geri"
+            app:argType="string"
+            android:defaultValue=" " />
+        <action
+            android:id="@+id/action_addPostFragment_to_myPostsFragment"
+            app:destination="@id/myPostsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.bashirli.alsat.app.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_addPostFragment"
+            app:destination="@id/addPostFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.bashirli.alsat.app.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPostsFragment"
+        android:name="com.bashirli.alsat.app.MyPostsFragment"
+        android:label="fragment_my_posts"
+        tools:layout="@layout/fragment_my_posts" >
+        <action
+            android:id="@+id/action_myPostsFragment_to_addPostFragment"
+            app:destination="@id/addPostFragment" />
+        <action
+            android:id="@+id/action_myPostsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/haqqindaFragment"
+        android:name="com.bashirli.alsat.app.HaqqindaFragment"
+        android:label="fragment_haqqinda"
+        tools:layout="@layout/fragment_haqqinda" >
+        <action
+            android:id="@+id/action_haqqindaFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/whatCanIdoFragment"
+        android:name="com.bashirli.alsat.app.WhatCanIdoFragment"
+        android:label="fragment_what_can_ido"
+        tools:layout="@layout/fragment_what_can_ido" >
+        <action
+            android:id="@+id/action_whatCanIdoFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
